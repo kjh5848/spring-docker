@@ -1,8 +1,5 @@
-#!/bin/bash
-
-
 # 1. Git 리포지토리 주소 설정
-REPO_URL=${SPRING_APP_REPO:-"https://github.com/busanuv/blog-last.git"}
+REPO_URL=${SPRING_APP_REPO:-"https://github.com/kjh5848/spring-app"}
 
 # 2. 기존 폴더 삭제 후 새로 클론
 git clone "$REPO_URL"
@@ -14,7 +11,7 @@ cd spring-app
 chmod +x ./gradlew
 
 # 5. Gradle 빌드 (테스트 생략)
-./gradlew clean build
+./gradlew clean build -x jar
 
 # 6. jar 파일 실행 권한 부여
 chmod +x build/libs/*.jar
