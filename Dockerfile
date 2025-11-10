@@ -1,7 +1,7 @@
 # 1. OpenJDK 21 기반 이미지를 사용
 # - 이 이미지는 Java 21(JDK)가 이미 설치된 경량 리눅스 환경(slim)입니다.
 # - JDK 설치 과정이 생략되어 빌드 속도가 빠르고 이미지 용량이 작습니다.
-FROM arm64v8/openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk
 
 
 # 2. 필수 패키지 설치 (예: git)
