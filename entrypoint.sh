@@ -11,7 +11,7 @@ cd spring-app
 chmod +x ./gradlew
 
 # 5. Gradle 빌드 (테스트 생략)
-./gradlew clean build -x jar
+./gradlew clean build
 
 # 6. jar 파일 실행 권한 부여
 chmod +x build/libs/*.jar
